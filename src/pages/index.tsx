@@ -4,7 +4,7 @@ import { Box, Card, Center, Code, FileInput, Grid, Kbd, MultiSelect, Stack, Text
 
 import { useForm } from "@mantine/form";
 import { Prism } from "@mantine/prism";
-import { useGitDiff } from "./git-diff";
+import { useGitDiff } from "../git-diff";
 import { memo } from "react";
 
 const shouldHide = (fileName: string, exclude: string[]) => {
