@@ -1,0 +1,68 @@
+.token {
+  color: rgb(92, 148, 13) !important;
+}
+
+.method,
+.function,
+.property-access {
+  color: rgb(92, 148, 13) !important;
+}
+
+.string {
+  color: rgb(54, 79, 199) !important;
+}
+
+.string-property {
+  color: rgb(92, 148, 13) !important;
+}
+
+.comment {
+  color: rgb(134, 142, 150) !important;
+}
+
+.operator {
+  color: rgb(201, 42, 42) !important;
+}
+
+.plain,
+.plain-text {
+  color: rgb(33, 37, 41) !important;
+}
+.punctuation {
+  color: rgb(73, 80, 87) !important;
+}
+
+.imports {
+  color: rgb(33, 37, 41) !important;
+}
+
+.known-class-name,
+.class-name {
+  color: rgb(201, 42, 42) !important;
+}
+
+.keyword,
+.attr-name {
+  color: rgb(201, 42, 42) !important;
+}
+
+.number {
+  color: rgb(28, 126, 214) !important;
+}
+
+.constant {
+  color: rgb(33, 37, 41) !important;
+}
+
+@media print {
+  * {
+    print-color-adjust: exact;
+  }
+  .print-hide {
+    display: none;
+  }
+
+  [style="background-color: rgb(235, 251, 238);"] {
+    background-color: rgb(213 250 220) !important;
+  }
+}
