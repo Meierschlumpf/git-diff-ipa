@@ -12,8 +12,7 @@ const useFileContent = (file: File | null) =>
     queryKey: ["fileContent", { name: file?.name, lastModified: file?.lastModified }],
     queryFn: async () => {
       if (!file) return null;
-      const reader = new FileReader();
-      return reader.readAsText(file);
+      return await file.text();
     },
   });
 
