@@ -66,3 +66,16 @@
     background-color: rgb(213 250 220) !important;
   }
 }
+
+.mantine-Prism-line {
+  box-sizing: border-box !important;
+  white-space: break-spaces !important;
+}
+
+.mantine-ScrollArea-viewport {
+  overflow: hidden !important;
+}
+
+.mantine-ScrollArea-viewport > div {
+  max-width: 100% !important;
+}
