@@ -1,81 +1,82 @@
 .token {
-  color: rgb(92, 148, 13) !important;
+	color: rgb(92, 148, 13) !important;
 }
 
 .method,
 .function,
 .property-access {
-  color: rgb(92, 148, 13) !important;
+	color: rgb(92, 148, 13) !important;
 }
 
 .string {
-  color: rgb(54, 79, 199) !important;
+	color: rgb(54, 79, 199) !important;
 }
 
 .string-property {
-  color: rgb(92, 148, 13) !important;
+	color: rgb(92, 148, 13) !important;
 }
 
 .comment {
-  color: rgb(134, 142, 150) !important;
+	color: rgb(134, 142, 150) !important;
 }
 
 .operator {
-  color: rgb(201, 42, 42) !important;
+	color: rgb(201, 42, 42) !important;
 }
 
 .plain,
 .plain-text {
-  color: rgb(33, 37, 41) !important;
+	color: rgb(33, 37, 41) !important;
 }
 .punctuation {
-  color: rgb(73, 80, 87) !important;
+	color: rgb(73, 80, 87) !important;
 }
 
 .imports {
-  color: rgb(33, 37, 41) !important;
+	color: rgb(33, 37, 41) !important;
 }
 
 .known-class-name,
 .class-name {
-  color: rgb(201, 42, 42) !important;
+	color: rgb(201, 42, 42) !important;
 }
 
 .keyword,
 .attr-name {
-  color: rgb(201, 42, 42) !important;
+	color: rgb(201, 42, 42) !important;
 }
 
 .number {
-  color: rgb(28, 126, 214) !important;
+	color: rgb(28, 126, 214) !important;
 }
 
 .constant {
-  color: rgb(33, 37, 41) !important;
+	color: rgb(33, 37, 41) !important;
 }
 
 @media print {
-  * {
-    print-color-adjust: exact;
-  }
-  .print-hide {
-    display: none;
-  }
+	* {
+		print-color-adjust: exact;
+	}
+	.print-hide {
+		display: none;
+	}
 
-  [style="background-color: rgb(235, 251, 238);"] {
-    background-color: rgb(213 250 220) !important;
-  }
+	[style='background-color: rgb(235, 251, 238);'] {
+		background-color: rgb(213 250 220) !important;
+	}
 }
 
 .mantine-Prism-line {
-  box-sizing: border-box !important;
-  white-space: break-spaces !important;
+	box-sizing: border-box !important;
+	white-space: break-spaces !important;
 }
 
 .mantine-ScrollArea-viewport {
-  overflow: hidden !important;
+	overflow: hidden !important;
 }
 
 .mantine-ScrollArea-viewport > div {
-  max-width: 100% !important;
+	max-width: 100% !important;
+	display: block !important;
 }
