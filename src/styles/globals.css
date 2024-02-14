@@ -79,3 +79,11 @@
 .mantine-ScrollArea-viewport > div {
   max-width: 100% !important;
 }
+
+table pre {
+  margin: 0;
+}
+
+td {
+  vertical-align: top;
+}
