@@ -148,9 +148,11 @@ export default function Home() {
                 </Title>
               </>
             )}
-            {Object.entries(fileDict).map(([fileName, { content, hightlights, language }]) => (
-              <MemoizedPreview key={fileName} hide={shouldHide(fileName, form.values.exclude)} fileName={fileName} language={language} hightlights={hightlights} content={content} />
-            ))}
+            {Object.entries(fileDict)
+              .sort(([_a, a], [_b, b]) => Object.keys(b.hightlights).length - Object.keys(a.hightlights).length)
+              .map(([fileName, { content, hightlights, language }]) => (
+                <MemoizedPreview key={fileName} hide={shouldHide(fileName, form.values.exclude)} fileName={fileName} language={language} hightlights={hightlights} content={content} />
+              ))}
             <table></table>
           </Stack>
         </Box>
