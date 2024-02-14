@@ -101,11 +101,7 @@ export default function Home() {
 
                   <Text>4. Use the settings to exclude files or paths</Text>
 
-                  <Text>
-                    5. Click <Kbd>CTRL</Kbd> + <Kbd>P</Kbd> to print the whole page.
-                  </Text>
-
-                  <Text>6. Configure the pdf print to include background graphics in the more settings section, this will make the code hightlights visible in the pdf.</Text>
+                  <Text>5. Click on the button to convert the code hightlights to tables, this will take a few seconds, after that you can copy the tables to your word document</Text>
                 </Stack>
 
                 <Stack spacing="sm" className="print-hide">
