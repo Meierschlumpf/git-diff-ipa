@@ -164,7 +164,7 @@ export default function Home() {
 interface PreviewProps {
   fileName: string;
   language: string | null;
-  hightlights: Record<number, { color: string; label: string }>;
+  hightlights: Record<number, { color: string }>;
   content: string;
   hide: boolean;
 }

@@ -91,14 +91,14 @@ const removeLastLineIfEmpty = (content: string) => {
   return content;
 };
 
-const added = { color: "green", label: "+" };
+const added = { color: "green" };
 const getHighlightLinesFromChanges = (
   changes: {
     startLine: number;
     content: string;
   }[]
 ) => {
-  const result = {} as Record<number, { color: string; label: string }>;
+  const result = {} as Record<number, { color: string }>;
   for (const change of changes) {
     const lines = change.content.split("\n");
     let offset = 0;
@@ -181,7 +181,7 @@ const getDict = (files: ReturnType<typeof getFiles>, changes: ReturnType<typeof 
     string,
     {
       content: string;
-      hightlights: Record<number, { color: string; label: string }>;
+      hightlights: Record<number, { color: string }>;
       language: string | null;
     }
   >;
