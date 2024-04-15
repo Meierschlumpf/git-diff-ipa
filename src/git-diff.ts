@@ -43,7 +43,7 @@ const getFiles = (content: string) => {
 
 const regex2 =
 	/diff --git a\/(.+) b\/.+(?:\n(?:deleted file mode 100644|new file mode 100644|similarity index \d+%\nrename from .+\nrename to .+))?\nindex [a-f0-9]+\.\.[a-f0-9]+(?: 100644)?\n-{3} (?:a\/.+|\/dev\/null)\n\+{3} (?:b\/.+|\/dev\/null)\n/g;
-
+const onlyRenameRegex = /diff --git a\/(.+) b\/.+(?:\nsimilarity index \d+%\nrename from .+\nrename to .+)\nd/g;
 
 const newEmptyFileRegex = /diff --git a\/(.+) b\/.+(?:\nnew.+\n.*\.\.)[a-f0-9]+.*\nd/g;
 const newBinaryFileRegex = /diff --git a\/(.+) b\/.+(?:\nnew.+\n.*\.\.)[a-f0-9]+.*\nBinary files\s\/dev\/null and b\/.+/g;
